@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Teams Meeting Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-icon"></div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <img src="images/icon1.png" alt="Microsoft team Icon" class="header-icon">
+                <input type="text" class="search-bar" placeholder="搜索 (Cmd+Opt+E)">
+                <img src="images/icon2.png" alt="User Portrait" class="header-icon">
+            </div>
+            <div class="toolbar">
+                <button class="tool-button" id="chat-button" ><div class="tool-icon"></div>聊天</button>
+                <button class="tool-button" id="people-button"><div class="tool-icon"></div>人员</button>
+                <button class="tool-button"><div class="tool-icon"></div>举手</button>
+                <button class="tool-button"><div class="tool-icon"></div>回应</button>
+                <button class="tool-button"><div class="tool-icon"></div>视图</button>
+                <button class="tool-button"><div class="tool-icon"></div>应用</button>
+                <button class="tool-button"><div class="tool-icon"></div>更多</button>
+                <button class="tool-button"><div class="tool-icon"></div>摄像头</button>
+                <button class="tool-button"><div class="tool-icon"></div>麦克风</button>
+                <button class="tool-button"><div class="tool-icon"></div>共享</button>
+                <button class="leave-button">离开</button>
+            </div>
+            <div class="meeting-area">
+                <div class="avatar">
+                    <img src="images/icon2.png" alt="User Avatar">
+                </div>
+                <p class="invite-text">邀请其他人加入</p>
+            </div>
+        </div>
+
+        <div class="side-panel" id="chat-panel">
+            <div class="panel-header">
+                <h2>会议聊天</h2>
+                <button class="close-button" id="chat-close">&times;</button>
+            </div>
+        </div>
+        <div class="side-panel" id="people-panel">
+            <div class="panel-header">
+                <h2>参与者</h2>
+                <button class="close-button" id="people-close">&times;</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
